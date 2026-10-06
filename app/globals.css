@@ -24,3 +24,145 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* app/globals.css */
+
+.container_shop {
+  @apply min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-amber-500 selection:text-slate-950;
+}
+
+.navbar_shop {
+  @apply bg-slate-900/80 backdrop-blur-md text-white shadow-lg sticky top-0 z-50 border-b border-slate-800;
+}
+
+.logo_shop {
+  @apply text-xl font-bold tracking-wider text-amber-400 cursor-pointer;
+}
+
+.navLinksDesktop_shop {
+  @apply hidden md:flex space-x-8 font-medium;
+}
+
+.navLink_shop {
+  @apply hover:text-amber-400 transition-colors duration-200;
+}
+
+.hamburgerBtn_shop {
+  @apply inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-slate-800 focus:outline-none;
+}
+
+.mobileMenu_shop {
+  @apply md:hidden bg-slate-900 border-t border-slate-800;
+}
+
+.mobileMenuLinks_shop {
+  @apply px-2 pt-2 pb-3 space-y-1 text-center;
+}
+
+.mobileNavLink_shop {
+  @apply block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400;
+}
+
+.hero_shop {
+  @apply relative overflow-hidden py-24 lg:py-32 bg-gradient-to-b from-slate-900 to-slate-950;
+}
+
+.heroTag_shop {
+  @apply text-amber-400 font-semibold tracking-widest text-xs uppercase px-3 py-1 bg-amber-400/10 rounded-full border border-amber-400/20;
+}
+
+.heroTitle_shop {
+  @apply mt-6 text-4xl font-extrabold text-white sm:text-5xl md:text-6xl tracking-tight;
+}
+
+.heroGradientText_shop {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500;
+}
+
+.heroDescription_shop {
+  @apply mt-6 text-base sm:text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed;
+}
+
+.heroBtn_shop {
+  @apply px-8 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg transition-all duration-200 shadow-lg shadow-amber-500/20 text-center;
+}
+
+.section_shop {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-900;
+}
+
+.sectionTitle_shop {
+  @apply text-2xl font-bold text-white sm:text-3xl text-center;
+}
+
+.sectionSubtitle_shop {
+  @apply text-slate-400 mt-2 text-center;
+}
+
+.collectionsGrid_shop {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12;
+}
+
+.collectionCard_shop {
+  @apply bg-slate-900 p-6 rounded-xl border border-slate-800/60 hover:border-amber-500/30 transition-all text-center;
+}
+
+.shopHeader_shop {
+  @apply flex flex-col md:flex-row md:items-end justify-between mb-12;
+}
+
+.filterBadgeActive_shop {
+  @apply px-3 py-1 bg-amber-500 text-slate-950 text-xs font-semibold rounded-full whitespace-nowrap cursor-pointer;
+}
+
+.filterBadge_shop {
+  @apply px-3 py-1 bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs rounded-full whitespace-nowrap cursor-pointer;
+}
+
+.productsGrid_shop {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.productCard_shop {
+  @apply bg-slate-900 rounded-2xl overflow-hidden border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-between;
+}
+
+.productImagePlaceholder_shop {
+  @apply h-64 bg-slate-950 border-b border-slate-800 flex items-center justify-center relative;
+}
+
+.productTag_shop {
+  @apply absolute top-3 left-3 bg-amber-500/10 text-amber-400 border border-amber-500/20 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded;
+}
+
+.productContent_shop {
+  @apply p-6 flex-1 flex flex-col justify-between;
+}
+
+.productCategory_shop {
+  @apply text-xs font-medium text-amber-400;
+}
+
+.productTitle_shop {
+  @apply text-lg font-bold text-white mt-1 group-hover:text-amber-400 transition-colors;
+}
+
+.productPrice_shop {
+  @apply text-xl font-extrabold text-white;
+}
+
+.productBtn_shop {
+  @apply px-4 py-2 bg-slate-800 hover:bg-amber-500 hover:text-slate-950 font-semibold text-xs rounded-lg text-slate-300 transition-all;
+}
+
+.footer_shop {
+  @apply bg-slate-900 py-12 border-t border-slate-800 text-center;
+}
+
+.inputEmail_shop {
+  @apply px-4 py-2.5 rounded-lg bg-slate-950 border border-slate-800 focus:border-amber-500 focus:outline-none text-sm text-white w-full;
+}
+
+.btnSubmit_shop {
+  @apply px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg text-sm transition-colors duration-200 whitespace-nowrap;
+}
